@@ -201,7 +201,7 @@ MonoBehaviour:
   sprintSpeed: 2
   jumpForce: 5
   gravity: 9.81
-  mouseSenitivity: 2
+  mouseSenitivity: 0.5
   upDownRange: 80
   horizontalMoveInput: Horizontal
   verticalMoveInput: Vertical
@@ -211,6 +211,7 @@ MonoBehaviour:
   jumpKey: 32
   footstepSource: {fileID: 207288353}
   footstepSounds:
+  - {fileID: 8300000, guid: eb9e23f8ad573db439efc7a3eeac8b17, type: 3}
   - {fileID: 8300000, guid: eb9e23f8ad573db439efc7a3eeac8b17, type: 3}
   walkStepInterval: 0.5
   sprintStepInterval: 0.3
