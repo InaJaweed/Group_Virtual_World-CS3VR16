@@ -14,7 +14,7 @@ public class Interactor : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -23,9 +23,9 @@ public class Interactor : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
-            if(Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
+            if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
             {
-                if(hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
+                if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
                 {
                     interactObj.Interact();
                 }

@@ -37,7 +37,7 @@ public class PickUpController : MonoBehaviour
         Vector3 distanceToPlayer = player.position - transform.position;
         if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotfull) PickUp();
 
-        if (equipped && Input.GetKeyDown(KeyCode.Q)) Drop();  
+        if (equipped && Input.GetKeyDown(KeyCode.Q)) Drop();
     }
 
     private void PickUp()
@@ -47,7 +47,7 @@ public class PickUpController : MonoBehaviour
 
         transform.SetParent(container);
         transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.Euler(0,0, rotateAmmount);
+        transform.localRotation = Quaternion.Euler(0, 0, rotateAmmount);
 
         rb.isKinematic = true;
         coll.isTrigger = true;
@@ -72,6 +72,6 @@ public class PickUpController : MonoBehaviour
         rb.AddForce(fpsCam.up * dropUpwardForce, ForceMode.Impulse);
 
         float random = Random.Range(-1f, 1f);
-        rb.AddTorque(new Vector3(random, random, random)*10);
+        rb.AddTorque(new Vector3(random, random, random) * 10);
     }
 }

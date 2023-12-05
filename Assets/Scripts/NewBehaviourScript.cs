@@ -18,7 +18,7 @@ public class NoteController : MonoBehaviour
     [SerializeField] private TMP_Text noteTextAreaUI;
 
     [Space(10)]
-    [SerializeField] [TextArea] private string noteText;
+    [SerializeField][TextArea] private string noteText;
 
     [Space(10)]
     [SerializeField] private UnityEvent openEvent;

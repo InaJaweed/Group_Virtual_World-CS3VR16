@@ -24,10 +24,10 @@ public class Raycast : MonoBehaviour
 
     private void Update()
     {
-        if(Physics.Raycast(mainCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f)), transform.forward, out RaycastHit hit, raylength))
+        if (Physics.Raycast(mainCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f)), transform.forward, out RaycastHit hit, raylength))
         {
             var readableItem = hit.collider.GetComponent<NoteController>();
-            if(readableItem != null)
+            if (readableItem != null)
             {
                 noteController = readableItem;
                 HighlightCrosshair(true);
@@ -41,7 +41,7 @@ public class Raycast : MonoBehaviour
         {
             ClearNote();
         }
-        if(noteController != null)
+        if (noteController != null)
         {
             if (Input.GetKeyDown(interactKey))
             {
@@ -52,7 +52,7 @@ public class Raycast : MonoBehaviour
 
     void ClearNote()
     {
-        if(noteController != null)
+        if (noteController != null)
         {
             HighlightCrosshair(false);
             noteController = null;
