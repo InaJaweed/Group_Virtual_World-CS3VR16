@@ -1,25 +1,53 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenDoor : MonoBehaviour
+interface AActivate
 {
+    void Activate(Collider other);
+    void Deactivate(Collider other);
+}
 
-    public BoxCollider coll;
+public class CollisionDetect : MonoBehaviour
+{
+    //public BoxCollider coll;
     public string tTag;
 
     // Start is called before the first frame update
     void Start()
     {
-        coll.isTrigger = false;
+        
     }
 
     void OnTriggerEnter(Collider other)
     {
-        // Check if the colliding GameObject has the specified tag
-        if (other.CompareTag(tTag))
+        AActivate activateInterface = gameObject.GetComponent<AActivate>();
+
+        if (activateInterface != null)
         {
-            //coll.isTrigger = true;
+           activateInterface.Activate(other);
+           //Debug.Log("Activated!");
+        }
+        else
+        {
+            //Debug.Log("Null");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        AActivate activateInterface = gameObject.GetComponent<AActivate>();
+
+
+        if (activateInterface != null)
+        {
+            activateInterface.Deactivate(other);
+            //Debug.Log("deActivated!");
+        }
+        else
+        {
+            //Debug.Log("Null");
         }
     }
 }
