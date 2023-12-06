@@ -19,7 +19,7 @@ public class PortalTextureSetup : MonoBehaviour
         }
         cameraA.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
         cameraMatA.mainTexture = cameraA.targetTexture;
-
+        
 
         if (cameraB.targetTexture != null)
         {
