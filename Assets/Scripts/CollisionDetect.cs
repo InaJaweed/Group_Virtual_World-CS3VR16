@@ -19,7 +19,7 @@ public class OpenDoor : MonoBehaviour
         // Check if the colliding GameObject has the specified tag
         if (other.CompareTag(tTag))
         {
-            coll.isTrigger = true;
+            //coll.isTrigger = true;
         }
     }
 }
