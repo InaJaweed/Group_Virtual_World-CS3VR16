@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class PickUpController : MonoBehaviour
+public class PickUpController : MonoBehaviour, IInteractable
 {
     public Rigidbody rb;
     public BoxCollider coll;
@@ -17,9 +16,9 @@ public class PickUpController : MonoBehaviour
     public bool equipped;
     public static bool slotfull;
 
+    // Start is called before the first frame update
     void Start()
     {
-
         if (!equipped)
         {
             rb.isKinematic = false;
@@ -31,18 +30,14 @@ public class PickUpController : MonoBehaviour
             coll.isTrigger = true;
             slotfull = true;
         }
-
     }
 
+    // Update is called once per frame
     void Update()
     {
-        Vector3 distanceToPlayer = player.position - transform.position;
-        if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotfull) PickUp();
-
         if (equipped && Input.GetKeyDown(KeyCode.Q)) Drop();
     }
-
-    private void PickUp()
+    public void Interact()
     {
         equipped = true;
         slotfull = true;
@@ -53,7 +48,6 @@ public class PickUpController : MonoBehaviour
 
         rb.isKinematic = true;
         coll.isTrigger = true;
-
     }
 
     private void Drop()
