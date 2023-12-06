@@ -8,6 +8,7 @@ public class PickUpController : MonoBehaviour
     public Rigidbody rb;
     public BoxCollider coll;
     public Transform player, container, fpsCam;
+    public Interactor interact;
 
     public float pickUpRange;
     public float dropForwardFroce, dropUpwardForce;
@@ -18,6 +19,7 @@ public class PickUpController : MonoBehaviour
 
     void Start()
     {
+
         if (!equipped)
         {
             rb.isKinematic = false;
@@ -66,7 +68,7 @@ public class PickUpController : MonoBehaviour
 
         transform.SetParent(null);
 
-        rb.velocity = player.GetComponent<Rigidbody>().velocity;
+        //rb.velocity = player.GetComponent<Rigidbody>().velocity;
 
         rb.AddForce(fpsCam.forward * dropForwardFroce, ForceMode.Impulse);
         rb.AddForce(fpsCam.up * dropUpwardForce, ForceMode.Impulse);
