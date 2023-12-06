@@ -4,14 +4,11 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
 
-public class NoteController : MonoBehaviour
+public class NoteController : MonoBehaviour, IInteractable
 {
 
-    [Header("Input")]
-    [SerializeField] private KeyCode closeKey;
-
     [Space(10)]
-    [SerializeField] private FPSController fpsController;
+    [SerializeField] private FPSController player;
 
     [Header("UI Text")]
     [SerializeField] GameObject noteCanvas;
@@ -23,34 +20,46 @@ public class NoteController : MonoBehaviour
     [Space(10)]
     [SerializeField] private UnityEvent openEvent;
     private bool isOpen = false;
+
+    public void Interact()
+    {
+        ShowNote();
+    }
     public void ShowNote()
     {
+        Debug.Log("IT IS OPEN");
+        isOpen = true;
         noteTextAreaUI.text = noteText;
         noteCanvas.SetActive(true);
         openEvent.Invoke();
-        DisablePlayer(true);
-        isOpen = true;
+        //DisablePlayer(true);
+       
     }
     void DisableNote()
     {
+        Debug.Log("DisableNote method is called.");
         noteCanvas.SetActive(false);
-        DisablePlayer(false);
+        //DisablePlayer(false);
         isOpen = false;
     }
 
-    void DisablePlayer(bool disable)
+    /*void DisablePlayer(bool disable)
     {
-        fpsController.enabled = !disable;
-    }
+        player.enabled = !disable;
+    }*/
 
     private void Update()
     {
         if (isOpen)
         {
-            if (Input.GetKeyDown(closeKey))
+            Debug.Log("Update is called and note is open.");
+
+            if (Input.GetKeyDown(KeyCode.Q))
             {
+                Debug.Log("Q key is pressed.");
                 DisableNote();
             }
         }
     }
+
 }
