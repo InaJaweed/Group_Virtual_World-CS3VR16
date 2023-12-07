@@ -49,14 +49,13 @@ public class DoorAnimator : MonoBehaviour, AActivate {
         }
     }
 
-
-    public void Deactivate(Collider other)
+    public void Update()
     {
-        /*
-        if (unlocked)
+        if (unlocked && !open)
         {
-            Anim.Play("Door_Close");
+            coll.isTrigger = true;
+            open = true;
+            Anim.Play("Door_Open");
         }
-        */
     }
 }

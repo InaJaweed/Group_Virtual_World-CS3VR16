@@ -6,6 +6,8 @@ public class StatueHandler : MonoBehaviour
 {
     public int[] answer;
     public List<int> input;
+    public GameObject go;
+
 
     void Start()
     {
@@ -29,6 +31,7 @@ public class StatueHandler : MonoBehaviour
         if (isCorrect)
         {
             Debug.Log("Puzzle Solved!");
+            go.GetComponent<DoorAnimator>().unlocked = true;
             // Handle puzzle completion logic here
         }
         else
