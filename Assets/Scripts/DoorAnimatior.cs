@@ -7,6 +7,7 @@ public class DoorAnimator : MonoBehaviour, AActivate {
 
     public Animation Anim;
     public BoxCollider coll;
+    public TextPopup textPopupScript;
 
     public string tTag;
     public bool unlocked;
@@ -40,8 +41,14 @@ public class DoorAnimator : MonoBehaviour, AActivate {
                 open = true;
                 Anim.Play("Door_Open");
             }
+            else if(!coll.isTrigger)
+            {
+                textPopupScript.ShowPopup("Door Locked!");
+
+            }
         }
     }
+
 
     public void Deactivate(Collider other)
     {

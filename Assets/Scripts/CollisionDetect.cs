@@ -6,7 +6,6 @@ using UnityEngine;
 interface AActivate
 {
     void Activate(Collider other);
-    void Deactivate(Collider other);
 }
 
 public class CollisionDetect : MonoBehaviour
@@ -39,15 +38,5 @@ public class CollisionDetect : MonoBehaviour
     {
         AActivate activateInterface = gameObject.GetComponent<AActivate>();
 
-
-        if (activateInterface != null)
-        {
-            activateInterface.Deactivate(other);
-            //Debug.Log("deActivated!");
-        }
-        else
-        {
-            //Debug.Log("Null");
-        }
     }
 }

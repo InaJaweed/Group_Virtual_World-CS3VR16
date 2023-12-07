@@ -7,16 +7,17 @@ public class OpenDoorButton : MonoBehaviour, IInteractable
 
     public Animation Anim;
     public BoxCollider coll;
+    public TextPopup textPopupScript;
+    public GameObject go;
 
-    public bool open;
+    //public bool open;
 
     public void Interact()
     {
-        if (!open)
+        if (!go.GetComponent<DoorAnimator>().unlocked)
         {
-            open = true;
-            Anim.Play("Door_Open");
-            coll.isTrigger = true;
+            go.GetComponent<DoorAnimator>().unlocked = true;
+            textPopupScript.ShowPopup("Door unlocked!");
         }
 
     }
