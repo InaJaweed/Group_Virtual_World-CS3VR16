@@ -8,6 +8,7 @@ interface IInteractable
 {
     public void Interact();
 }
+
 public class Interactor : MonoBehaviour
 {
     public Transform InteractorSource;
@@ -16,7 +17,7 @@ public class Interactor : MonoBehaviour
     public Image crosshair;
     public Color highlightColor = Color.red; // Set your desired highlight color
 
-    private Color originalColor;
+    private Color originalColor;//hello jaweed
 
     void Start()
     {
