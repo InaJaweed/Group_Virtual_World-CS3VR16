@@ -11,7 +11,6 @@ public class PortalTeleport : MonoBehaviour
 
     //private FPSController FPSplayer;
 
-    // Update is called once per frame
     void Update()
     {
         if (playerIsOverlapping)
@@ -24,14 +23,14 @@ public class PortalTeleport : MonoBehaviour
             {
                 Debug.Log("PLEASE WORK");
                 float rotationDiff = -Quaternion.Angle(transform.rotation, reciever.rotation);
-                rotationDiff += 180;
+                rotationDiff += rotationDiff;
                 player.Rotate(Vector3.up, rotationDiff);
 
                 Vector3 positionOffset = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
 
-               // FPSplayer.enabled = false;
+                //FPSplayer.enabled = false;
                 player.position = reciever.position + positionOffset;
-              //  FPSplayer.enabled = true;
+                //FPSplayer.enabled = true;
 
                 playerIsOverlapping = false;
             }

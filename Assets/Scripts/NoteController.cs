@@ -37,7 +37,7 @@ public class NoteController : MonoBehaviour, IInteractable
     }
     void DisableNote()
     {
-        Debug.Log("DisableNote method is called.");
+        //Debug.Log("DisableNote method is called.");
         noteCanvas.SetActive(false);
         //DisablePlayer(false);
         isOpen = false;
@@ -50,9 +50,10 @@ public class NoteController : MonoBehaviour, IInteractable
 
     private void Update()
     {
+        //Debug.Log("Update is called and note is open.");
         if (isOpen)
         {
-            Debug.Log("Update is called and note is open.");
+            //Debug.Log("Update is called and note is open.");
 
             if (Input.GetKeyDown(KeyCode.Q))
             {
