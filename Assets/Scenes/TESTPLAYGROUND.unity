@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -592,6 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statueNumber: 5
+  statueHandler: {fileID: 0}
 --- !u!1 &375640892
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statueNumber: 1
+  statueHandler: {fileID: 0}
 --- !u!4 &558299260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 509842047882988454, guid: cccea3fa7cd03134f81c0cb598f2bc2d, type: 3}
@@ -977,6 +979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statueNumber: 3
+  statueHandler: {fileID: 0}
 --- !u!65 &736044283 stripped
 BoxCollider:
   m_CorrespondingSourceObject: {fileID: 8953023390518355017, guid: f03176e63be7c8048ba416d408f663ec, type: 3}
@@ -1501,6 +1504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statueNumber: 2
+  statueHandler: {fileID: 0}
 --- !u!1 &1015919370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,6 +1871,52 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1 &1300192139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300192141}
+  - component: {fileID: 1300192140}
+  m_Layer: 0
+  m_Name: StatueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1300192140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300192139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba970cc9d177fe48a70ab7b35062b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer: 
+  input: 
+--- !u!4 &1300192141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300192139}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.88979, y: -139.86656, z: 79.733986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1327350790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +2053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statueNumber: 4
+  statueHandler: {fileID: 0}
 --- !u!1 &1561241321
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,7 +2165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1772171896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2670,3 +2721,4 @@ SceneRoots:
   - {fileID: 197742434}
   - {fileID: 139745902}
   - {fileID: 813977847}
+  - {fileID: 1300192141}
