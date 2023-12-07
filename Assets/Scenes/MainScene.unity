@@ -14,9 +14,9 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
+  m_FogMode: 1
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 361e17457f699e647b54654f916a4a33, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.016223771, g: 0.018914148, b: 0.02391004, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -522,7 +522,7 @@ PrefabInstance:
     - target: {fileID: 8424073627695423409, guid: ec6fed4d58230f744835bead604836c8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d3e570ddf5be8b24c845396c8838addc, type: 2}
+      objectReference: {fileID: 2100000, guid: f35e7d6c1fd27da4883ac12aeed65126, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1108,7 +1108,7 @@ PrefabInstance:
     - target: {fileID: 8424073627695423409, guid: ec6fed4d58230f744835bead604836c8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d3e570ddf5be8b24c845396c8838addc, type: 2}
+      objectReference: {fileID: 2100000, guid: f35e7d6c1fd27da4883ac12aeed65126, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3098,7 +3098,7 @@ PrefabInstance:
     - target: {fileID: 8424073627695423409, guid: ec6fed4d58230f744835bead604836c8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d3e570ddf5be8b24c845396c8838addc, type: 2}
+      objectReference: {fileID: 2100000, guid: f35e7d6c1fd27da4883ac12aeed65126, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8113,7 +8113,7 @@ PrefabInstance:
     - target: {fileID: 8424073627695423409, guid: ec6fed4d58230f744835bead604836c8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d3e570ddf5be8b24c845396c8838addc, type: 2}
+      objectReference: {fileID: 2100000, guid: f35e7d6c1fd27da4883ac12aeed65126, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
