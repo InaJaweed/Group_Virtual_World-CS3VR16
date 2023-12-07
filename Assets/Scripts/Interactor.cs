@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 interface IInteractable
 {
-    public void Interact();
+    void Interact();
 }
 
 public class Interactor : MonoBehaviour
@@ -15,13 +14,12 @@ public class Interactor : MonoBehaviour
     public float InteractRange;
 
     public Image crosshair;
-    public Color highlightColor = Color.red; // Set your desired highlight color
+    public Color highlightColor = Color.red;
 
-    private Color originalColor;//hello jaweed
+    private Color originalColor;
 
     void Start()
     {
-        // Store the original color for resetting
         originalColor = crosshair.color;
     }
 
@@ -36,11 +34,19 @@ public class Interactor : MonoBehaviour
             if (hitObject.layer == LayerMask.NameToLayer("Interactable"))
             {
                 HighlightCrosshair();
-                if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj) && Input.GetKeyDown(KeyCode.E)) interactObj.Interact();
+
+                if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
+                {
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        Debug.Log("Interact key pressed");
+                        interactObj.Interact();
+                    }
+                }
             }
             else
             {
-                ResetCrosshair();  
+                ResetCrosshair();
             }
         }
         else
@@ -51,13 +57,11 @@ public class Interactor : MonoBehaviour
 
     void HighlightCrosshair()
     {
-        crosshair.color = Color.red;
-        //crosshair.color = highlightColor;
+        crosshair.color = highlightColor;
     }
 
     void ResetCrosshair()
     {
-        crosshair.color = Color.white;
-        //crosshair.color = originalColor;
+        crosshair.color = originalColor;
     }
 }
