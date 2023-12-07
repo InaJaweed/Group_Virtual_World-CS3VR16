@@ -63,7 +63,7 @@ public class Raycast : MonoBehaviour
     {
         if (on)
         {
-            crosshair.color = Color.red;
+            crosshair.color = Color.green;
         }
         else
         {
