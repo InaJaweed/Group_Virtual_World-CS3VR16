@@ -6,10 +6,6 @@ using UnityEngine.Events;
 
 public class NoteController : MonoBehaviour, IInteractable
 {
-
-    [Space(10)]
-    [SerializeField] private FPSController player;
-
     [Header("UI Text")]
     [SerializeField] GameObject noteCanvas;
     [SerializeField] private TMP_Text noteTextAreaUI;

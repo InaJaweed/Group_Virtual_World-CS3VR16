@@ -5,7 +5,13 @@ using UnityEngine;
 public class StatueHandler : MonoBehaviour
 {
     public int[] answer;
+    public string text;
+
     public List<int> input;
+    public GameObject go;
+    public AudioSource audioSourceCorrect;
+    public AudioSource audioSourceIncorrect;
+    public TextPopup textPopupScript;
 
     void Start()
     {
@@ -28,11 +34,15 @@ public class StatueHandler : MonoBehaviour
 
         if (isCorrect)
         {
+            audioSourceCorrect.Play();
+            textPopupScript.ShowPopup(text);
             Debug.Log("Puzzle Solved!");
+            go.GetComponent<DoorAnimator>().unlocked = true;
             // Handle puzzle completion logic here
         }
         else
         {
+            audioSourceIncorrect.Play();
             Debug.Log("Incorrect sequence. Resetting...");
         }
     }
