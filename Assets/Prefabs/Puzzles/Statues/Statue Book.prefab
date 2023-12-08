@@ -407,14 +407,14 @@ MonoBehaviour:
   noteCanvas: {fileID: 7063333621052826825}
   noteTextAreaUI: {fileID: 1203129681745930168}
   noteText: "In the realm where statues stand with pride,\r\nA dance of secrets,
-    nothing to hide.\r\n\nFirst, a creature with a regal air,\r\nEyes gleaming bright,
-    a majestic stare.\r\nWith a flowing mane in the moonlit gleam,\r\nA ruler stands
-    proud, a dream.\r\n\r\nNext, a burdened one, strong and mild,\r\nQuiet strength,
-    secrets compiled.\r\nWith hooves that echo a rhythmic beat,\r\nA creature stands
-    firm, completing the feat.\n\nYou can find me in myths and tales of old,\r\noften
-    guarding treasures of silver and gold.\r\nWith teeth like daggers and a serpent\u2019s
-    form\r\nA guardian fierce, in realms untold.\n\nPress the statues in order to
-    open door"
+    nothing to hide.\r\n\r\nFirst, a creature with a regal air,\r\nEyes gleaming
+    bright, a majestic stare.\r\nWith a flowing mane in the moonlit gleam,\r\nA ruler
+    stands proud, a dream.\r\n\r\nNext, a burdened one, strong and mild,\r\nQuiet
+    strength, secrets compiled.\r\nWith hooves that echo a rhythmic beat,\r\nA creature
+    stands firm, completing the feat.\r\n\r\nYou can find me in myths and tales of
+    old,\r\noften guarding treasures of silver and gold.\r\nWith teeth like daggers
+    and a serpent\u2019s form\r\nA guardian fierce, in realms untold.\r\n\r\nPress
+    the three real statues to open the door,\r\nExpose the truth, and fakery no more."
   openEvent:
     m_PersistentCalls:
       m_Calls: []
