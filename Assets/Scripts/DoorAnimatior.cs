@@ -7,11 +7,13 @@ public class DoorAnimator : MonoBehaviour, AActivate {
 
     public Animation Anim;
     public BoxCollider coll;
+    public TextPopup textPopupScript;
 
     public string tTag;
     public bool unlocked;
     public bool requiresKey;
     public bool open;
+    public string text;
 
     public void Start()
     {
@@ -40,16 +42,21 @@ public class DoorAnimator : MonoBehaviour, AActivate {
                 open = true;
                 Anim.Play("Door_Open");
             }
+            else if(!coll.isTrigger)
+            {
+                textPopupScript.ShowPopup(text);
+
+            }
         }
     }
 
-    public void Deactivate(Collider other)
+    public void Update()
     {
-        /*
-        if (unlocked)
+        if (unlocked && !open)
         {
-            Anim.Play("Door_Close");
+            coll.isTrigger = true;
+            open = true;
+            Anim.Play("Door_Open");
         }
-        */
     }
 }

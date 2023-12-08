@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3195250872675339334
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1282918069981659957, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_Name
+      value: book Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934236200166364608, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: noteText
+      value: "In the realm where statues stand with pride,\r\nA dance of secrets,
+        nothing to hide.\r\n\nPress the statues in orderof the riddles to open a
+        door\nFirst, a creature with a regal air,\r\nEyes gleaming bright, a majestic
+        stare.\r\nWith a flowing mane in the moonlit gleam,\r\nA ruler stands proud,
+        a dream.\r\n\r\nNext, a burdened one, strong and mild,\r\nQuiet strength,
+        secrets compiled.\r\nWith hooves that echo a rhythmic beat,\r\nA creature
+        stands firm, completing the feat.\n\nYou can find me in myths and tales of
+        old,\r\noften guarding treasures of silver and gold.\r\nWith teeth like daggers
+        and a serpent\u2019s form\r\nA guardian fierce, in realms untold.\n\nPress
+        the statues in order to open door"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314623673554474744, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.297
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314623673554474744, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.641
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314623673554474744, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.724
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314623673554474744, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314623673554474744, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314623673554474744, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314623673554474744, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314623673554474744, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314623673554474744, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314623673554474744, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e91b34311636864ebd0fbaee2b06c6b, type: 3}
