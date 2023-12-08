@@ -6,10 +6,6 @@ using UnityEngine.Events;
 
 public class NoteController : MonoBehaviour, IInteractable
 {
-
-    [Space(10)]
-    [SerializeField] private FPSController player;
-
     [Header("UI Text")]
     [SerializeField] GameObject noteCanvas;
     [SerializeField] private TMP_Text noteTextAreaUI;
@@ -19,6 +15,9 @@ public class NoteController : MonoBehaviour, IInteractable
 
     [Space(10)]
     [SerializeField] private UnityEvent openEvent;
+
+
+
     private bool isOpen = false;
 
     public void Interact()
@@ -27,26 +26,20 @@ public class NoteController : MonoBehaviour, IInteractable
     }
     public void ShowNote()
     {
-        Debug.Log("IT IS OPEN");
+        //Debug.Log("IT IS OPEN");
         isOpen = true;
         noteTextAreaUI.text = noteText;
         noteCanvas.SetActive(true);
         openEvent.Invoke();
-        //DisablePlayer(true);
        
     }
     void DisableNote()
     {
         //Debug.Log("DisableNote method is called.");
         noteCanvas.SetActive(false);
-        //DisablePlayer(false);
+
         isOpen = false;
     }
-
-    /*void DisablePlayer(bool disable)
-    {
-        player.enabled = !disable;
-    }*/
 
     private void Update()
     {
@@ -57,7 +50,7 @@ public class NoteController : MonoBehaviour, IInteractable
 
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                Debug.Log("Q key is pressed.");
+                //Debug.Log("Q key is pressed.");
                 DisableNote();
             }
         }

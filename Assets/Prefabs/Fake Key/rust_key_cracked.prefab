@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 10949808f65ed4044a6a7743f612c0d6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10949808f65ed4044a6a7743f612c0d6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10949808f65ed4044a6a7743f612c0d6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10949808f65ed4044a6a7743f612c0d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -98,7 +98,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d27dc19e2ad287c43865850803f2f695, type: 2}
     - target: {fileID: 919132149155446097, guid: 10949808f65ed4044a6a7743f612c0d6, type: 3}
       propertyPath: m_Name
-      value: rust_key_cracked 1
+      value: rust_key_cracked
       objectReference: {fileID: 0}
     - target: {fileID: 2904039706715846206, guid: 10949808f65ed4044a6a7743f612c0d6, type: 3}
       propertyPath: m_Materials.Array.data[0]
