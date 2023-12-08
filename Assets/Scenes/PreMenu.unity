@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.024156682, g: 0.029174045, b: 0.039898302, a: 1}
+  m_IndirectSpecularColor: {r: 0.02415665, g: 0.029174015, b: 0.039898254, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scream: {fileID: 2073797577}
   Jumpcam: {fileID: 849565113}
-  player: {fileID: 0}
+  player: {fileID: 1372921433}
 --- !u!65 &169437616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -238,8 +238,8 @@ Transform:
   m_GameObject: {fileID: 169437614}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.11, y: 3.4189987, z: 76.96}
-  m_LocalScale: {x: 10, y: 7, z: 2}
+  m_LocalPosition: {x: 22.3074, y: 3.2344, z: 76.96}
+  m_LocalScale: {x: 16.395, y: 7.3689003, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -759,6 +759,11 @@ Transform:
   - {fileID: 289721594}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -5.215, y: 0, z: 0}
+--- !u!1 &1372921433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8248194349626278928, guid: 21e1398e5fcbc9b4c9782d8177a34e3b, type: 3}
+  m_PrefabInstance: {fileID: 2109064194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1524382645
 GameObject:
   m_ObjectHideFlags: 0
