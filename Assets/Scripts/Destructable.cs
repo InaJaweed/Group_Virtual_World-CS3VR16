@@ -5,11 +5,20 @@ using UnityEngine;
 public class Destructable : MonoBehaviour, IInteractable
 {
     public GameObject destroyedVersion;
+    public AudioSource Break;
+    public TextPopup textPopupScript;
+
+    public string text;
 
     public Quaternion rotation;
 
     public void Interact()
     {
+        Break.Play();
+        if(textPopupScript != null)
+        {
+            textPopupScript.ShowPopup(text);
+        }
         DestoryObject(rotation);
     }
 
