@@ -13,6 +13,7 @@ public class DoorAnimator : MonoBehaviour, AActivate {
     public bool unlocked;
     public bool requiresKey;
     public bool open;
+    public string text;
 
     public void Start()
     {
@@ -43,7 +44,7 @@ public class DoorAnimator : MonoBehaviour, AActivate {
             }
             else if(!coll.isTrigger)
             {
-                textPopupScript.ShowPopup("Door Locked!");
+                textPopupScript.ShowPopup(text);
 
             }
         }
