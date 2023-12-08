@@ -117,4 +117,4 @@ MonoBehaviour:
   Break: {fileID: 0}
   textPopupScript: {fileID: 0}
   text: 
-  rotation: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
