@@ -8,6 +8,7 @@ public class DoorAnimator : MonoBehaviour, AActivate {
     public Animation Anim;
     public BoxCollider coll;
     public TextPopup textPopupScript;
+    public AudioSource audioDoorOpening;
 
     public string tTag;
     public bool unlocked;
@@ -38,6 +39,7 @@ public class DoorAnimator : MonoBehaviour, AActivate {
             if (!requiresKey || (requiresKey && unlocked))
             {
                 // If no key is required or the door is unlocked, open the door
+                audioDoorOpening.Play();
                 coll.isTrigger = true;
                 open = true;
                 Anim.Play("Door_Open");
@@ -54,6 +56,7 @@ public class DoorAnimator : MonoBehaviour, AActivate {
     {
         if (unlocked && !open)
         {
+            audioDoorOpening.Play();
             coll.isTrigger = true;
             open = true;
             Anim.Play("Door_Open");
