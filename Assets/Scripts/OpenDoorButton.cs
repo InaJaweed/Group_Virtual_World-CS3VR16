@@ -6,7 +6,6 @@ public class OpenDoorButton : MonoBehaviour, IInteractable
 {
 
     public Animation Anim;
-    public BoxCollider coll;
     public TextPopup textPopupScript;
     public GameObject go;
 
