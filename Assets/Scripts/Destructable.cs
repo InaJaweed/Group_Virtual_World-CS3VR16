@@ -19,6 +19,10 @@ public class Destructable : MonoBehaviour, IInteractable
         {
             textPopupScript.ShowPopup(text);
         }
+        else
+        {
+
+        }
         DestoryObject(rotation);
     }
 
