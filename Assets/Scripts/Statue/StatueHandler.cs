@@ -6,6 +6,7 @@ public class StatueHandler : MonoBehaviour
 {
     public int[] answer;
     public string text;
+    public bool correct;
 
     public List<int> input;
     public GameObject go;
@@ -17,6 +18,7 @@ public class StatueHandler : MonoBehaviour
     {
         answer = new int[] { 1, 2, 3 };
         input = new List<int>(answer.Length);
+        correct = false;
     }
 
     public void CheckAnswer()
@@ -32,13 +34,18 @@ public class StatueHandler : MonoBehaviour
             }
         }
 
-        if (isCorrect)
+        if (isCorrect && !correct)
         {
             audioSourceCorrect.Play();
             textPopupScript.ShowPopup(text);
             Debug.Log("Puzzle Solved!");
             go.GetComponent<DoorAnimator>().unlocked = true;
-            // Handle puzzle completion logic here
+            correct = true;
+
+        }
+        else if (correct)
+        {
+
         }
         else
         {

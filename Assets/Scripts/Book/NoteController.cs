@@ -31,15 +31,13 @@ public class NoteController : MonoBehaviour, IInteractable
         noteTextAreaUI.text = noteText;
         noteCanvas.SetActive(true);
         openEvent.Invoke();
-        
-        //DisablePlayer(true);
        
     }
     void DisableNote()
     {
         //Debug.Log("DisableNote method is called.");
         noteCanvas.SetActive(false);
-        //DisablePlayer(false);
+
         isOpen = false;
     }
 

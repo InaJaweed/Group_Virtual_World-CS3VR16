@@ -29,16 +29,8 @@ public class FPSController : MonoBehaviour
     [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
     [SerializeField] private KeyCode jumpKey = KeyCode.Space;
 
-    [Header("FootSteps Sounds")]
-    [SerializeField] private AudioSource footstepSource;
-    [SerializeField] private AudioClip[] footstepSounds;
-    [SerializeField] private float walkStepInterval = 0.5f;
-    [SerializeField] private float sprintStepInterval = 0.3f;
-    [SerializeField] private float velocityThreshold = 2.0f;
 
-    private int lastPlayedIndex = -1;
-    private bool isMoving;
-    private float nextStepTime;
+
     private Camera mainCamera;
     private float verticalRotation;
     private Vector3 currentMovement = Vector3.zero;
@@ -56,7 +48,7 @@ public class FPSController : MonoBehaviour
     {
         HandleMovement();
         HandleRotation();
-        HandleFootsteps();
+  
     }
 
     void HandleMovement()
@@ -79,7 +71,7 @@ public class FPSController : MonoBehaviour
 
         characterController.Move(currentMovement * Time.deltaTime);
 
-        isMoving = verticalInput != 0 || horizontalInput != 0;
+        
     }
 
     void HandleGravityAndJumping()
@@ -109,36 +101,7 @@ public class FPSController : MonoBehaviour
         mainCamera.transform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
     }
 
-    void HandleFootsteps()
-    {
-        float currentStepInterval = (Input.GetKey(sprintKey) ? sprintStepInterval : walkStepInterval);
 
-        if(characterController.isGrounded && isMoving && Time.time > nextStepTime && characterController.velocity.magnitude > velocityThreshold)
-        {
-            PlayFootStepSounds();
-            nextStepTime = Time.time + currentStepInterval;
-        }
-
-    }
-
-    void PlayFootStepSounds()
-    {
-        int randomIndex;
-        if(footstepSounds.Length == 1)
-        {
-            randomIndex = 0;
-        }
-        else
-        {
-            randomIndex = UnityEngine.Random.Range(0, footstepSounds.Length - 1);
-            if(randomIndex >= lastPlayedIndex)
-            {
-                randomIndex++;
-            }
-        }
-        lastPlayedIndex = randomIndex;
-        footstepSource.clip = footstepSounds[randomIndex];
-    }
 }
 
 
