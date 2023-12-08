@@ -9,6 +9,7 @@ public class DoorAnimator : MonoBehaviour, AActivate {
     public BoxCollider coll;
     public TextPopup textPopupScript;
     public AudioSource audioDoorOpening;
+    //public PickUpController pickUpController;
 
     public string tTag;
     public bool unlocked;
@@ -34,6 +35,9 @@ public class DoorAnimator : MonoBehaviour, AActivate {
             {
                 // If a key is required and the door is locked, unlock it
                 unlocked = true;
+                other.GetComponent<PickUpController>().Drop();
+                Destroy(other);
+
             }
 
             if (!requiresKey || (requiresKey && unlocked))

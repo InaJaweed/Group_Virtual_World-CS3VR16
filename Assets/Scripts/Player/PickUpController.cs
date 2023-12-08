@@ -50,7 +50,7 @@ public class PickUpController : MonoBehaviour, IInteractable
         coll.isTrigger = true;
     }
 
-    private void Drop()
+    public void Drop()
     {
         equipped = false;
         slotfull = false;
