@@ -6,10 +6,6 @@ using UnityEngine.Events;
 
 public class NoteController : MonoBehaviour, IInteractable
 {
-
-    [Space(10)]
-    [SerializeField] private FPSController player;
-
     [Header("UI Text")]
     [SerializeField] GameObject noteCanvas;
     [SerializeField] private TMP_Text noteTextAreaUI;
@@ -35,6 +31,7 @@ public class NoteController : MonoBehaviour, IInteractable
         noteTextAreaUI.text = noteText;
         noteCanvas.SetActive(true);
         openEvent.Invoke();
+        
         //DisablePlayer(true);
        
     }
@@ -45,11 +42,6 @@ public class NoteController : MonoBehaviour, IInteractable
         //DisablePlayer(false);
         isOpen = false;
     }
-
-    /*void DisablePlayer(bool disable)
-    {
-        player.enabled = !disable;
-    }*/
 
     private void Update()
     {

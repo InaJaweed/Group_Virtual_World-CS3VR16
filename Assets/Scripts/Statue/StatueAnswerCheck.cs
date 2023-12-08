@@ -8,6 +8,7 @@ public class StatueAnswerCheck : MonoBehaviour, IInteractable
 {
     public int statueNumber;
 
+    public AudioSource audioSourceButton;
     public StatueHandler statueHandler;
 
     private void Start()
@@ -20,6 +21,10 @@ public class StatueAnswerCheck : MonoBehaviour, IInteractable
         {
             int pressedStatue = Press();
             statueHandler.input.Add(pressedStatue);
+            if (audioSourceButton != null)
+            {
+                audioSourceButton.Play();
+            }
 
             Debug.Log("Input List: " + string.Join(", ", statueHandler));
 
