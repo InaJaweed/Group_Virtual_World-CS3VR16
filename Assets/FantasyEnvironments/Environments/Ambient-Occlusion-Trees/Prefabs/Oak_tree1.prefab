@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33824537730079500}
   - component: {fileID: 23693811526290372}
   - component: {fileID: 136486588218137092}
+  - component: {fileID: 4201174824032234016}
   m_Layer: 0
   m_Name: Oak_tree1
   m_TagString: Untagged
@@ -108,3 +109,30 @@ CapsuleCollider:
   m_Height: 8.15
   m_Direction: 1
   m_Center: {x: 0, y: 2.11, z: 0}
+--- !u!205 &4201174824032234016
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243781198178196}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23693811526290372}
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23693811526290372}
+  - screenRelativeHeight: 0.025841875
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23693811526290372}
+  m_Enabled: 1
