@@ -9,6 +9,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1480935018566314765, guid: f9c2334a49d1ec64ea7abd7028e66d28, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480935018566314765, guid: f9c2334a49d1ec64ea7abd7028e66d28, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480935018566314765, guid: f9c2334a49d1ec64ea7abd7028e66d28, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480935018566314765, guid: f9c2334a49d1ec64ea7abd7028e66d28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.079793
       objectReference: {fileID: 0}
@@ -58,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2510210702107613470, guid: f9c2334a49d1ec64ea7abd7028e66d28, type: 3}
       propertyPath: m_Name
-      value: Fake Key 1
+      value: Fake Key
       objectReference: {fileID: 0}
     - target: {fileID: 2510210702107613470, guid: f9c2334a49d1ec64ea7abd7028e66d28, type: 3}
       propertyPath: m_TagString
@@ -102,4 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyedVersion: {fileID: 973306067950845482, guid: 48a89da2cd3010641b1c21e539e0f819, type: 3}
+  Break: {fileID: 0}
+  textPopupScript: {fileID: 0}
+  text: 
   rotation: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
