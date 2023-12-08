@@ -6,14 +6,14 @@ public class JumpScare : MonoBehaviour
 {
     public AudioSource Scream;
     public GameObject Jumpcam;
-    public GameObject player;
+    
 
     private void OnTriggerEnter()
     {
         Debug.Log("JUMP SCARE TRIGGER");
         Scream.Play();
         Jumpcam.SetActive(true);
-        player.SetActive(false);
+        
         StartCoroutine(EndJump());
     }
 
@@ -21,7 +21,7 @@ public class JumpScare : MonoBehaviour
     {
         yield return new WaitForSeconds(2.03f);
         Jumpcam.SetActive(false);
-        player.SetActive(true);
+       
         // Load the new scene after the jump scare
         LoadNextScene();
     }
