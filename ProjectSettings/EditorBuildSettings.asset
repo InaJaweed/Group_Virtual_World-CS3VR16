@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/PreMenu.unity
     guid: 2f5d2435689e346d1a68b99d36cfebbe
   - enabled: 1
-    path: Assets/Scenes/MainMenu2.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: ce4e94cb2d1deb74490b98ce6032ff62
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/HOUSE Ben.unity
+    guid: 9234d019ecbd7f94a80931a700bdf492
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: d22bf117be7236e42b5e54e205623d16
   m_configObjects: {}
