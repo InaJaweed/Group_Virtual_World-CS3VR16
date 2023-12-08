@@ -15,6 +15,9 @@ public class NoteController : MonoBehaviour, IInteractable
 
     [Space(10)]
     [SerializeField] private UnityEvent openEvent;
+
+
+
     private bool isOpen = false;
 
     public void Interact()
@@ -23,20 +26,18 @@ public class NoteController : MonoBehaviour, IInteractable
     }
     public void ShowNote()
     {
-        Debug.Log("IT IS OPEN");
+        //Debug.Log("IT IS OPEN");
         isOpen = true;
         noteTextAreaUI.text = noteText;
         noteCanvas.SetActive(true);
         openEvent.Invoke();
-        
-        //DisablePlayer(true);
        
     }
     void DisableNote()
     {
         //Debug.Log("DisableNote method is called.");
         noteCanvas.SetActive(false);
-        //DisablePlayer(false);
+
         isOpen = false;
     }
 
@@ -49,7 +50,7 @@ public class NoteController : MonoBehaviour, IInteractable
 
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                Debug.Log("Q key is pressed.");
+                //Debug.Log("Q key is pressed.");
                 DisableNote();
             }
         }
