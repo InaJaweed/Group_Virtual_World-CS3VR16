@@ -1,7 +1,7 @@
 # Group Virtual World CS3VR16
 ## Dread Manor
 
-Dread Manor is an immersive Virtual World experience that challenges players with deceptive puzzles and maze-like environments. Set within an eerie abandoned mansion overlooking a graveyard, players must navigate through a series of rooms, each filled with fakery and deception. With elements of suspense, logic, and exploration, Dread Manor offers an engaging gameplay experience for players of all ages.
+Dread Manor is an immersive Virtual World experience that challenges players with deceptive puzzles and maze-like environments. Set within an eerie abandoned mansion overlooking a graveyard, players must navigate through a series of rooms, each filled with fakery and deception. Dread Manor offers an engaging gameplay experience for players of all ages.
 
 ## Features
 
